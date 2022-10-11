@@ -1,0 +1,7 @@
+# Activation du moteur de réécriture pour la configuration du serveur Apache :
+RewriteEngine On
+
+    # Si la racinedu dossier "TP-10OCT" est chargée dans le navigateur, Alors on redirige automatiquement l'utilisateur dans le dossier "public/" :
+    RewriteRule ^(.*)$ public/
+
+    

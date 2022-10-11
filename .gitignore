@@ -1,0 +1,6 @@
+# Les fichiers que Git doit ignorer :
+/.env
+
+
+# Les dossiers que Git doit ignorer :
+/vendor

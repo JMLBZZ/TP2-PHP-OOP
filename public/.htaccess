@@ -1,0 +1,14 @@
+# Activation du moteur de réécriture pour la configuration du serveur Apache :
+RewriteEngine On
+
+    # Redéfinition du point d'entrée de l'application
+    RewriteBase /
+
+    # Si ce qui se trouve dans la barre d'url n'est ni un fichier, ni un dossier...
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # ...alors on redirige vers "index.php :
+    RewriteRule ^(.*)$ index.php
+
+    
